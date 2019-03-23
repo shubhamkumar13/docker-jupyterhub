@@ -8,14 +8,17 @@ server, or function as a volume image for your server. You can also use them in
 a CI/CD system such as GitLab CI to build your content prior to bundling it
 into a standalone server container.
 
-**Notice:** Every quarter of every year, an automatic update is performed.
-Please take a look at the tag. `2018-4` for the Year 2018 and 4 for the fourth
-quarter of the year 2018.
+**Notice:** We use [Semantic Versioning 2.0.0][5]
+
+**Notice:** Please check the [Changelog][5] to see what we have changed in this
+repo..
 
 [1]: https://hub.docker.com/r/joergklein/jupyterhub
 [2]: https://docker.com
 [3]: https://jupyterhub.readthedocs.io/en/stable
 [4]: https://jupyterlab.readthedocs.io/en/stable
+[5]: https://semver.org
+[6]: https://github.com/joergklein/docker-jupyterhub/blob/master/CHANGELOG.md
 
 ## Building your JupyterHub image and run the container
 
