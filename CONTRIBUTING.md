@@ -9,7 +9,7 @@ please read the following guidelines.
 
 For quick questions please [open an issue][1].
   
-  [1]: https://github.com/joergklein/docker-jupyter/issues
+  [1]: https://github.com/joergklein/docker-jupyterhub/issues
 
 ### Found a bug?
 
@@ -18,7 +18,7 @@ to the [issue tracker][2] in our GitHub repository. Even better, you can submit
 a Pull Request with a fix. However, before doing so, please read the
 [submission guidelines][3].
 
-  [2]: https://github.com/joergklein/docker-jupyter/issues
+  [2]: https://github.com/joergklein/docker-jupyterhub/issues
   [3]: #submission-guidelines
 
 ### Missing a feature?
