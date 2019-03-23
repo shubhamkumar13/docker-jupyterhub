@@ -1,4 +1,4 @@
-FROM continuumio/miniconda3:latest
+FROM joergklein/miniconda:latest
 
 Label Joerg Klein <kwp.klein@gmail.com>
 
@@ -7,6 +7,9 @@ RUN apt-get update -y \
     && apt-get install -y --no-install-recommends \
     git \
     nano \
+    texlive \
+    texlive-generic-extra \
+    texlive-xetex \
     unzip \
     && apt-get clean \
     && rm -rf /var/lib/apt/lists/*
