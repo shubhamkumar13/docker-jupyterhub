@@ -10,7 +10,7 @@ into a standalone server container.
 
 **Notice:** We use [Semantic Versioning 2.0.0][5]
 
-**Notice:** Please check the [Changelog][5] to see what we have changed in this
+**Notice:** Please check the [Changelog][6] to see what we have changed in this
 repo..
 
 [1]: https://hub.docker.com/r/joergklein/jupyterhub
