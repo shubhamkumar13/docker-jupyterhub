@@ -7,6 +7,7 @@ RUN apt-get update -y \
     && apt-get install -y --no-install-recommends \
     git \
     nano \
+    r-base \
     texlive \
     texlive-generic-extra \
     texlive-xetex \
@@ -24,6 +25,10 @@ RUN conda install -c conda-forge jupyter_nbextensions_configurator \
     pandas \
     scipy \
     sympy \
+    && conda clean -ay
+
+# Install the R kernel
+RUN conda install -c r r-irkernel \
     && conda clean -ay
 
 COPY jupyterhub_config.py /

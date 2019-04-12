@@ -1,6 +1,17 @@
 # Changelog
 
-## Release Version: 0.1.0 from March 23, 2019
+## v0.2.0
+
+**Date: April 10, 2019**
+
+### Enhancements
+
+- **R Kernel**  
+    R Kernel installed with the conda package manager.
+
+## v0.1.0
+
+**Date: March 23, 2019**
 
 ### Enhancements
 

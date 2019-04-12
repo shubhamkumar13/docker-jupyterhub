@@ -48,13 +48,21 @@ Your JupyterHub with JupyterLab is automatically generated during this build.
 docker run -p 8000:8000 -d --name jupyterhub joergklein/jupyterhub jupyterhub
 ```
 
-- `-p` is used to map your `local port 8000` to the `container port 8000`
+### Download the image, mount a local data directory and run the container
+
+```bash
+docker run -p 8000:8000 -d --name jupyterhub --volume $(pwd)/datasets:/data joergklein/jupyterhub jupyterhub
+```
+
+- `-p` is used to map your `local port 8000` to the `container port 8000`.
 - `-d` is used to run the container in background. JupyterHub will just write
 logs so no need to output them in your terminal unless you want to troubleshoot
 a server error.
-- `-- name jupyterhub` names your container jupyterhub
-- `jupyterhub` the image
-- `jupyterhub` is the last command used to start the jupyterhub server
+- `-- name jupyterhub` names your container jupyterhub.
+- `--volume $(pwd)/datasets:/data` mount the local directory /dataset into the
+container to the directory /data.
+- `jupyterhub` the image.
+- `jupyterhub` is the last command used to start the jupyterhub server.
 
 and your `JupyterHub` with `Jupyterlab` is now available on
 `http://localhost:8000`.
