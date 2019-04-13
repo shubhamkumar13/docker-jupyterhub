@@ -36,9 +36,6 @@ COPY jupyterhub_config.py /
 # Create admin user
 RUN useradd -ms /bin/bash admin
 
-# Create a mountpoint
-VOLUME /data
-
 # Setup application
 EXPOSE 8000
 

@@ -1,5 +1,13 @@
 # Changelog
 
+## v0.2.1
+
+**Date: April 11, 2019**
+
+### Fixes
+
+- Delete mountpoint /data from the Dockerfile
+
 ## v0.2.0
 
 **Date: April 10, 2019**
