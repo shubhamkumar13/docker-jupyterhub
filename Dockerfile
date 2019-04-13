@@ -6,12 +6,12 @@ Label Joerg Klein <kwp.klein@gmail.com>
 RUN apt-get update -y \
     && apt-get install -y --no-install-recommends \
     git \
-    nano \
     r-base \
     texlive \
     texlive-generic-extra \
     texlive-xetex \
     unzip \
+    vim \
     && apt-get clean \
     && rm -rf /var/lib/apt/lists/*
 

@@ -1,5 +1,13 @@
 # Changelog
 
+## v0.2.2
+
+**Date: April 13, 2019**
+
+### Enhancements
+
+- Change the editor nano to vim
+
 ## v0.2.1
 
 **Date: April 11, 2019**
