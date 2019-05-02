@@ -58,9 +58,8 @@ docker run -p 8000:8000 -d --name jupyterhub --volume $(pwd)/datasets:/data joer
 - `-d` is used to run the container in background. JupyterHub will just write
 logs so no need to output them in your terminal unless you want to troubleshoot
 a server error.
-- `-- name jupyterhub` names your container jupyterhub.
-- `--volume $(pwd)/datasets:/data` mount the local directory /dataset into the
-container to the directory /data.
+- `--name jupyterhub` names your container jupyterhub.
+- `--volume $(pwd)/datasets:/data` mount the local directory /dataset into the container to /data.
 - `jupyterhub` the image.
 - `jupyterhub` is the last command used to start the jupyterhub server.
 

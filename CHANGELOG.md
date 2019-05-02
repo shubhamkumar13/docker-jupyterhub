@@ -1,12 +1,40 @@
 # Changelog
 
+## v0.3.0
+
+**Date: May 02, 2019**
+
+### Updates
+
+- **Jupyter**
+    - IPython was updated to Version 7.5.0
+    - NB Convert was updated to Version 5.5.0
+    - Papermil was updated to Version 1.0.0
+
+### Enhancements
+
+- **gridExtra**
+    - r-base installed with the conda package manager.
+    - r-gridextra installed with the conda package manager.
+    - r-kableextra installed with the conda package manager.
+    - r-markdown installed with the conda package manager.
+- **Latex**
+    - texlive-generic-recommended
+    - texlive-latex-recommended
+    - texlive-fonts-recommended
+
+---
+
 ## v0.2.2
 
 **Date: April 13, 2019**
 
-### Enhancements
+### Changes
 
-- Change the editor nano to vim
+- **Dockerfile**
+    - Change the editor nano to vim.
+
+---
 
 ## v0.2.1
 
@@ -14,7 +42,10 @@
 
 ### Fixes
 
-- Delete mountpoint /data from the Dockerfile
+- **Dockerfile**
+    - Delete mountpoint /data from the Dockerfile.
+
+---
 
 ## v0.2.0
 
@@ -23,7 +54,9 @@
 ### Enhancements
 
 - **R Kernel**  
-    R Kernel installed with the conda package manager.
+    - R Kernel installed with the conda package manager.
+
+---
 
 ## v0.1.0
 
@@ -31,8 +64,8 @@
 
 ### Enhancements
 
-- **Miniconda 3:**  
-    We have build our own Miniconda 3 (based on Python 3.7) image. The reason
+- **Miniconda 3:**
+    - We have build our own Miniconda 3 (based on Python 3.7) image. The reason
     for that image is, that the original Miniconda 3 images uses Debian 9.x
     (codename stretch). The repos for texlive are from the year 2016. We changed
     to Debian 10 (codename Buster). The  texlive packages are from 2019.

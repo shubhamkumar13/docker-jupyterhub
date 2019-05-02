@@ -6,10 +6,13 @@ Label Joerg Klein <kwp.klein@gmail.com>
 RUN apt-get update -y \
     && apt-get install -y --no-install-recommends \
     git \
-    r-base \
     texlive \
     texlive-generic-extra \
+    texlive-generic-recommended \
+    texlive-latex-recommended \
+    texlive-fonts-recommended \
     texlive-xetex \
+    lmodern \
     unzip \
     vim \
     && apt-get clean \
@@ -23,6 +26,10 @@ RUN conda install -c conda-forge jupyter_nbextensions_configurator \
     numpy \
     matplotlib \
     pandas \
+    r-base \
+    r-gridextra \
+    r-kableextra \
+    r-markdown \
     scipy \
     sympy \
     && conda clean -ay
