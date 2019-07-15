@@ -1,5 +1,23 @@
 # Changelog
 
+## v0.4.0
+
+**Date: July 02, 2019**
+
+### Updates
+
+- **Jupyter**
+    - JupyterHub was updated to Version 1.0.0
+    - JupyterLab was updated to Version 1.0.2
+    - Jupyter notebook was updated to Version 5.7.8
+
+### Remove
+- **R**
+    - r-base
+- **Latex**
+    - texlive-generic-recommended
+    - texlive-latex-recommended
+
 ## v0.3.0
 
 **Date: May 02, 2019**
@@ -13,7 +31,7 @@
 
 ### Enhancements
 
-- **gridExtra**
+- **R**
     - r-base installed with the conda package manager.
     - r-gridextra installed with the conda package manager.
     - r-kableextra installed with the conda package manager.

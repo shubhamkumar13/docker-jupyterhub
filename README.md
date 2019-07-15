@@ -37,7 +37,7 @@ Dockerfile and conda.
 The Repo is on https://github.com/joergklein/docker-jupyterhub
 
 ```bash
-docker build -t juypterhub .
+docker build -t jupyterhub .
 ```
 
 Your JupyterHub with JupyterLab is automatically generated during this build.

@@ -8,8 +8,6 @@ RUN apt-get update -y \
     git \
     texlive \
     texlive-generic-extra \
-    texlive-generic-recommended \
-    texlive-latex-recommended \
     texlive-fonts-recommended \
     texlive-xetex \
     lmodern \
@@ -26,16 +24,12 @@ RUN conda install -c conda-forge jupyter_nbextensions_configurator \
     numpy \
     matplotlib \
     pandas \
-    r-base \
+    r-irkernel \
     r-gridextra \
     r-kableextra \
     r-markdown \
     scipy \
     sympy \
-    && conda clean -ay
-
-# Install the R kernel
-RUN conda install -c r r-irkernel \
     && conda clean -ay
 
 COPY jupyterhub_config.py /
