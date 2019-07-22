@@ -7,8 +7,8 @@ RUN apt-get update -y \
     && apt-get install -y --no-install-recommends \
     git \
     texlive \
-    texlive-generic-extra \
     texlive-fonts-recommended \
+    texlive-plain-generic \
     texlive-xetex \
     lmodern \
     unzip \

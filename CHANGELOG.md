@@ -1,5 +1,23 @@
 # Changelog
 
+## v0.4.1
+
+**Date: July 22, 2019**
+
+### Updates
+
+- **Jupyter**
+    - JupyterHub was updated to Version 1.0.0
+    - Jupyter notebook was updated to Version 6.0.0
+
+### Enhancements
+- **Latex**
+    - texlive-plain-generic
+
+### Remove
+- **Latex**
+    - texlive-generic-extra
+
 ## v0.4.0
 
 **Date: July 02, 2019**
