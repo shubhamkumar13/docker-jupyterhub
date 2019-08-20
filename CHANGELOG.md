@@ -1,5 +1,21 @@
 # Changelog
 
+## v0.4.2
+
+**Date: August 20, 2019**
+
+### Enhancements
+
+- **R**
+    - r-essentials installed with the conda package manager
+
+### Remove
+
+- **R**
+    - r-gridextra
+    - r-kableextra
+
+
 ## v0.4.1
 
 **Date: July 22, 2019**
@@ -11,10 +27,12 @@
     - Jupyter notebook was updated to Version 6.0.0
 
 ### Enhancements
+
 - **Latex**
     - texlive-plain-generic
 
 ### Remove
+
 - **Latex**
     - texlive-generic-extra
 
@@ -30,6 +48,7 @@
     - Jupyter notebook was updated to Version 5.7.8
 
 ### Remove
+
 - **R**
     - r-base
 - **Latex**
@@ -50,16 +69,14 @@
 ### Enhancements
 
 - **R**
-    - r-base installed with the conda package manager.
-    - r-gridextra installed with the conda package manager.
-    - r-kableextra installed with the conda package manager.
-    - r-markdown installed with the conda package manager.
+    - r-base installed with the conda package manager
+    - r-gridextra installed with the conda package manager
+    - r-kableextra installed with the conda package manager
+    - r-markdown installed with the conda package manager
 - **Latex**
     - texlive-generic-recommended
     - texlive-latex-recommended
     - texlive-fonts-recommended
-
----
 
 ## v0.2.2
 
@@ -79,7 +96,7 @@
 ### Fixes
 
 - **Dockerfile**
-    - Delete mountpoint /data from the Dockerfile.
+    - Delete mountpoint /data from the Dockerfile
 
 ---
 
@@ -90,7 +107,7 @@
 ### Enhancements
 
 - **R Kernel**  
-    - R Kernel installed with the conda package manager.
+    - R Kernel installed with the conda package manager
 
 ---
 

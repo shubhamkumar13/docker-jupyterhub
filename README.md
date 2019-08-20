@@ -36,7 +36,7 @@ Dockerfile and conda.
 
 The Repo is on https://github.com/joergklein/docker-jupyterhub
 
-```bash
+```sh
 docker build -t jupyterhub .
 ```
 
@@ -44,14 +44,14 @@ Your JupyterHub with JupyterLab is automatically generated during this build.
 
 ### Download the image and run the container
 
-```bash
+```sh
 docker run -p 8000:8000 -d --name jupyterhub joergklein/jupyterhub jupyterhub
 ```
 
 ### Download the image, mount a local data directory and run the container
 
-```bash
-docker run -p 8000:8000 -d --name jupyterhub --volume $(pwd)/datasets:/data joergklein/jupyterhub jupyterhub
+```sh
+docker run -p 8000:8000 -d --name jupyterhub --volume $(pwd)/datasets:/home/admin/data joergklein/jupyterhub jupyterhub
 ```
 
 - `-p` is used to map your `local port 8000` to the `container port 8000`.
@@ -68,7 +68,7 @@ and your `JupyterHub` with `Jupyterlab` is now available on
 
 ### Start / Stop JupyterHub
 
-```bash
+```sh
 docker start / stop jupyterhub
 ```
 
@@ -85,7 +85,7 @@ container and create a new system user with a password.
 **Notice** The user admin will be created by the Dockerfile. The reason is to
 avoid error messages during the start process.
 
-```bash
+```sh
 docker exec -it jupyterhub bash
 passwd admin
 ```
@@ -97,7 +97,7 @@ default configuration.
 
 #### Set users and passwords for the working class heros
 
-```bash
+```sh
 docker exec -it jupyterhub bash
 useradd --create-home user1
 passwd user1
@@ -108,7 +108,7 @@ can change the rights for a basic user.
 
 ### Configure jupyterhub_config.py
 
-```bash
+```sh
 # jupyterhub_config.py
 c = get_config()
 
@@ -121,3 +121,11 @@ c.Authenticator.whitelist = {"admin"}
 c.Authenticator.admin_users = {"admin"}
 ```
 
+### Install new packages
+```sh
+docker exec -it jupyterhub bash
+conda install -c conda-forge <package name>
+
+Example:
+conda install -c conda-forge r-kableextra
+```

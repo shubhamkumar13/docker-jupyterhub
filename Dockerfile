@@ -14,7 +14,8 @@ RUN apt-get update -y \
     unzip \
     vim \
     && apt-get clean \
-    && rm -rf /var/lib/apt/lists/*
+    && rm -rf /var/lib/apt/lists/* \
+    && rm -rf /tmp/*
 
 # Install conda and Jupyter
 RUN conda update -y conda
@@ -24,10 +25,7 @@ RUN conda install -c conda-forge jupyter_nbextensions_configurator \
     numpy \
     matplotlib \
     pandas \
-    r-irkernel \
-    r-gridextra \
-    r-kableextra \
-    r-markdown \
+    r-essentials \
     scipy \
     sympy \
     && conda clean -ay
