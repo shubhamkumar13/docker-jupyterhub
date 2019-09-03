@@ -1,5 +1,16 @@
 # Changelog
 
+## v0.4.3
+
+**Date: September 03, 2019**
+
+### Remove
+
+- **Latex**
+    - lmodern
+
+---
+
 ## v0.4.2
 
 **Date: August 20, 2019**
@@ -15,6 +26,7 @@
     - r-gridextra
     - r-kableextra
 
+---
 
 ## v0.4.1
 
@@ -36,6 +48,8 @@
 - **Latex**
     - texlive-generic-extra
 
+---
+
 ## v0.4.0
 
 **Date: July 02, 2019**
@@ -54,6 +68,8 @@
 - **Latex**
     - texlive-generic-recommended
     - texlive-latex-recommended
+
+---
 
 ## v0.3.0
 
@@ -77,6 +93,8 @@
     - texlive-generic-recommended
     - texlive-latex-recommended
     - texlive-fonts-recommended
+
+---
 
 ## v0.2.2
 

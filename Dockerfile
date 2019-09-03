@@ -10,7 +10,6 @@ RUN apt-get update -y \
     texlive-fonts-recommended \
     texlive-plain-generic \
     texlive-xetex \
-    lmodern \
     unzip \
     vim \
     && apt-get clean \

@@ -68,6 +68,7 @@ build
 bundle
 coverage
 data
+datasets
 logs
 node_modules
 .npm
