@@ -1,5 +1,16 @@
 # Changelog
 
+## v0.4.4
+
+**Date: November 05, 2019**
+
+### Updates
+
+- **Jupyter**
+    - Jupyter notebook was updated to Version 6.0.2
+
+---
+
 ## v0.4.3
 
 **Date: September 03, 2019**
