@@ -1,4 +1,4 @@
-FROM joergklein/miniconda:latest
+FROM continuumio/miniconda3:latest
 
 Label Joerg Klein <kwp.klein@gmail.com>
 

@@ -1,5 +1,15 @@
 # Changelog
 
+## v0.4.5
+
+**date: January 09, 2020
+
+### Updates
+
+- **Miniconda**
+    - Change to continuumio/miniconda3
+    - Delete joergklein/miniconda
+
 ## v0.4.4
 
 **Date: November 05, 2019**

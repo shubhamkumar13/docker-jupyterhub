@@ -4,21 +4,12 @@ JupyterHub is a multi-user server for Jupyter notebooks. JupyterLab is the next
 generation web-based user interface for the Jupyter Project.
 [jorgklein/jupyterhub][1] is a [Docker][2] base image for [JupyterHub][3] and
 [JupyterLab][4]. Images derived from this image can either run as a stand-alone
-server, or function as a volume image for your server. You can also use them in
-a CI/CD system such as GitLab CI to build your content prior to bundling it
-into a standalone server container.
+server, or function as a volume image for your server.
 
-**Notice:** We use [Semantic Versioning 2.0.0][5]
-
-**Notice:** Please check the [Changelog][6] to see what we have changed in this
-repo..
-
-[1]: https://hub.docker.com/r/joergklein/jupyterhub
+[1]: https://hub.docker.com/u/joergklein/jupyterhub
 [2]: https://docker.com
 [3]: https://jupyterhub.readthedocs.io/en/stable
 [4]: https://jupyterlab.readthedocs.io/en/stable
-[5]: https://semver.org
-[6]: https://github.com/joergklein/docker-jupyterhub/blob/master/CHANGELOG.md
 
 ## Building your JupyterHub image and run the container
 
