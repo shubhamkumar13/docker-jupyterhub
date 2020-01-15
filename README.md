@@ -6,7 +6,7 @@ generation web-based user interface for the Jupyter Project.
 [JupyterLab][4]. Images derived from this image can either run as a stand-alone
 server, or function as a volume image for your server.
 
-[1]: https://hub.docker.com/u/joergklein/jupyterhub
+[1]: https://hub.docker.com/r/joergklein/jupyterhub
 [2]: https://docker.com
 [3]: https://jupyterhub.readthedocs.io/en/stable
 [4]: https://jupyterlab.readthedocs.io/en/stable
