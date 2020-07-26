@@ -47,8 +47,8 @@ docker run -p 8000:8000 -d --name jupyterhub --volume $(pwd)/datasets:/home/admi
 
 - `-p` is used to map your `local port 8000` to the `container port 8000`.
 - `-d` is used to run the container in background. JupyterHub will just write
-logs so no need to output them in your terminal unless you want to troubleshoot
-a server error.
+  logs so no need to output them in your terminal unless you want to troubleshoot
+  a server error.
 - `--name jupyterhub` names your container jupyterhub.
 - `--volume $(pwd)/datasets:/data` mount the local directory /dataset into the container to /data.
 - `jupyterhub` the image.
@@ -82,7 +82,7 @@ passwd admin
 ```
 
 The command `docker exec -it jupyterhub bash` will spawn a root shell in your
-docker container.  **You can use the root shell to create system users in the
+docker container. **You can use the root shell to create system users in the
 container**. These accounts will be used for authentication in JupyterHub's
 default configuration.
 
@@ -97,7 +97,7 @@ passwd user1
 Login as admin and change to `localhost:8000/hub/admin`. In the admin panel you
 can change the rights for a basic user.
 
-### Configure jupyterhub_config.py
+### Configure jupyterhub
 
 ```sh
 # jupyterhub_config.py
@@ -113,6 +113,7 @@ c.Authenticator.admin_users = {"admin"}
 ```
 
 ### Install new packages
+
 ```sh
 docker exec -it jupyterhub bash
 conda install -c conda-forge <package name>
