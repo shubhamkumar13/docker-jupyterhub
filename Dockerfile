@@ -1,11 +1,11 @@
-FROM continuumio/miniconda3:latest
-
-Label Joerg Klein <kwp.klein@gmail.com>
+FROM python:3
 
 # Install all OS dependencies for fully functional notebook server
 RUN apt-get update -y \
     && apt-get install -y --no-install-recommends \
     git \
+    sudo \
+    curl \
     texlive \
     texlive-fonts-recommended \
     texlive-plain-generic \
@@ -17,17 +17,8 @@ RUN apt-get update -y \
     && rm -rf /tmp/*
 
 # Install conda and Jupyter
-RUN conda update -y conda
-RUN conda install -c conda-forge jupyter_nbextensions_configurator \
-    jupyterhub \
-    jupyterlab \
-    numpy \
-    matplotlib \
-    pandas \
-    r-essentials \
-    scipy \
-    sympy \
-    && conda clean -ay
+RUN pip install --upgrade pip
+RUN pip --no-cache-dir install nested_dict pandas seaborn jupyterhub jupyterlab streamlit
 
 COPY jupyterhub_config.py /
 
